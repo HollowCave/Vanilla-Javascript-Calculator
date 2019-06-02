@@ -1,0 +1,67 @@
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.calc-container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  height: 55vh;
+  width: 25vw;
+  border: 1px solid #000000;
+  border-radius: 5%;
+  background-color: dimgrey;
+  box-shadow: 5px 10px 8px #000000, -8px 0 8px -4px #000000;
+}
+
+.input-view {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#calc-output {
+  font-size: 35px;
+  text-align: right;
+  color: #191919;
+  display: block;
+  width: 21vw;
+  height: 7vh;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .25em;
+  text-align: center;
+  margin: 8em 1.5em 0 1.5em;
+}
+
+.buttons > input {
+  padding: 1em;
+}
+
+#equal {
+  grid-row: 4/6;
+  grid-column: 4;
+}
+
+#zero {
+  grid-column: 1/3;
+}
