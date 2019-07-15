@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 100%;
 }
 
 figure {
@@ -10,9 +11,8 @@ figure {
 }
 
 figure img {
-  height: 100%;
-  width: 100%;
-  background-size: cover;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .calc-container {
@@ -21,8 +21,8 @@ figure img {
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
-  height: 55vh;
-  width: 25vw;
+  height: 400px;
+  width: 300px;
   border: 1px solid #000000;
   border-radius: 5%;
   background-color: dimgrey;
@@ -41,8 +41,8 @@ figure img {
   text-align: right;
   color: #191919;
   display: block;
-  width: 21vw;
-  height: 7vh;
+  width: 250px;
+  height: 40px;
 }
 
 .buttons {
